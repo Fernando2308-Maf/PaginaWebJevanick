@@ -202,14 +202,14 @@ export const HomePage = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-start">
 
             {/* ── Columna izquierda: Logo ── */}
-            <div className="flex flex-col items-center lg:items-start text-center lg:text-left pt-4">
+            <div className="flex flex-col items-center lg:items-start text-center lg:text-left" style={{ marginTop: '-16px' }}>
 
               {/* Logo recortado — solo el emblema JV sin el texto inferior */}
               <div
                 className="relative mb-8"
                 style={{
-                  width: '300px',
-                  height: '228px',   /* muestra emblema + JEVANICK, oculta el subtítulo pequeño */
+                  width: '340px',
+                  height: '258px',
                   overflow: 'hidden',
                 }}
               >
@@ -219,7 +219,7 @@ export const HomePage = () => {
                   src={logo}
                   alt="JEVANICK"
                   style={{
-                    width: '300px',
+                    width: '340px',
                     height: 'auto',
                     marginTop: '-10px',
                     filter: 'drop-shadow(0 16px 48px rgba(0,0,0,0.5)) drop-shadow(0 0 60px rgba(6,182,212,0.3))',
