@@ -202,7 +202,7 @@ export const HomePage = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-start">
 
             {/* ── Columna izquierda: Logo ── */}
-            <div className="flex flex-col items-center lg:items-start text-center lg:text-left" style={{ marginTop: '-16px' }}>
+            <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
 
               {/* Logo recortado — solo el emblema JV sin el texto inferior */}
               <div
@@ -211,6 +211,9 @@ export const HomePage = () => {
                   width: '340px',
                   height: '258px',
                   overflow: 'hidden',
+                  position: 'relative',
+                  top: '-30px',
+                  left: '-75px',
                 }}
               >
                 {/* halo suave detrás */}
