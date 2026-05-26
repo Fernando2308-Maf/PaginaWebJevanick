@@ -199,10 +199,10 @@ export const HomePage = () => {
         </div>
 
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-16 items-start">
 
             {/* ── Columna izquierda: Logo ── */}
-            <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
+            <div className="flex flex-col items-center lg:items-start text-center lg:text-left pt-4">
 
               {/* Logo recortado — solo el emblema JV sin el texto inferior */}
               <div
