@@ -206,14 +206,11 @@ export const HomePage = () => {
 
               {/* Logo recortado — solo el emblema JV sin el texto inferior */}
               <div
-                className="relative mb-8"
+                className="logo-quienes mb-8"
                 style={{
                   width: '340px',
                   height: '258px',
                   overflow: 'hidden',
-                  position: 'relative',
-                  top: '-30px',
-                  left: '-75px',
                 }}
               >
                 {/* halo suave detrás */}
