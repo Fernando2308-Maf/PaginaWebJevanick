@@ -1,0 +1,12 @@
+{
+  "projects": [
+    {
+      "name": "jevanick-backend",
+      "src": "backend"
+    },
+    {
+      "name": "jevanick-frontend",
+      "src": "frontend"
+    }
+  ]
+}
