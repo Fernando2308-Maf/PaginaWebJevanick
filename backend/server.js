@@ -33,12 +33,17 @@ app.use((err, req, res, next) => {
 
 const PORT = process.env.PORT || 5000;
 
-app.listen(PORT, () => {
-  console.log(`
+// Solo escucha en puerto cuando se corre localmente (no en Vercel serverless)
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`
 ╔══════════════════════════════════════════╗
 ║   🚀 JEVANICK SERVER RUNNING 🚀          ║
 ║   📡 Port: ${PORT}                           ║
 ║   🔗 MongoDB: ${process.env.MONGODB_URI}  ║
 ╚══════════════════════════════════════════╝
-  `);
-});
+    `);
+  });
+}
+
+module.exports = app;
