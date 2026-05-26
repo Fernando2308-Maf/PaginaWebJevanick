@@ -43,11 +43,14 @@ export const Header = () => {
 
           {/* ── Logo ── */}
           <Link to="/" className="flex items-center gap-3 group shrink-0">
-            <img
-              src={logo}
-              alt="JEVANICK"
-              className="h-11 w-11 object-contain group-hover:scale-110 transition-transform duration-300 drop-shadow-lg"
-            />
+            <div style={{ width: '44px', height: '34px', overflow: 'hidden', flexShrink: 0 }}>
+              <img
+                src={logo}
+                alt="JEVANICK"
+                className="group-hover:scale-110 transition-transform duration-300 drop-shadow-lg"
+                style={{ width: '44px', height: 'auto', marginTop: '-1px' }}
+              />
+            </div>
             <div className="hidden sm:block leading-tight">
               <span className="block text-lg font-black text-white tracking-tight">JEVANICK</span>
               <span className="block text-xs text-secondary/70 font-medium">Crea tu futuro profesional</span>
